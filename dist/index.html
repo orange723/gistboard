@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gistboard — orange723</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 14px; }
+  body {
+    background: #0c0c0c;
+    color: #c0c0c0;
+    font-family: "SF Mono", "Menlo", "Monaco", "Cascadia Code", "Consolas",
+                 "Liberation Mono", "Courier New", monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  .terminal {
+    width: 100%;
+    max-width: 900px;
+    background: #141414;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    overflow: hidden;
+  }
+  .terminal-header {
+    background: #1e1e1e;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #2a2a2a;
+    user-select: none;
+  }
+  .dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    display: inline-block;
+  }
+  .dot.red    { background: #FF5F57; }
+  .dot.yellow { background: #FEBC2E; }
+  .dot.green  { background: #28C840; }
+  .term-title {
+    color: #888;
+    font-size: 0.85rem;
+    margin-left: 6px;
+  }
+  .terminal-body {
+    padding: 16px 18px 24px;
+    min-height: 400px;
+    line-height: 1.6;
+  }
+  .header-line {
+    color: #569CD6;
+    margin-bottom: 6px;
+  }
+  .stats-line {
+    color: #6A9955;
+    margin-bottom: 16px;
+  }
+  .gist-row {
+    padding: 6px 0;
+    border-bottom: 1px solid #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .gist-row:last-child { border-bottom: none; }
+  .gist-row:hover { background: #1a1a1a; margin: 0 -18px; padding-left: 18px; padding-right: 18px; }
+  .prompt {
+    color: #28C840;
+    font-weight: bold;
+    margin-right: 4px;
+    flex-shrink: 0;
+  }
+  .gist-link {
+    color: #61AFEF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .gist-link:hover { text-decoration: underline; }
+  .gist-meta {
+    color: #6A9955;
+    font-size: 0.85rem;
+  }
+  .gist-desc {
+    color: #888;
+    font-style: italic;
+  }
+  .gist-info {
+    display: block;
+    width: 100%;
+    padding-left: 14px;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1px;
+  }
+  .lang-tag {
+    font-weight: bold;
+    margin-right: 6px;
+  }
+  .gist-time {
+    color: #555;
+  }
+  .footer-line {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #2a2a2a;
+    color: #555;
+    font-size: 0.8rem;
+  }
+  .footer-line .prompt { color: #28C840; }
+  .cursor {
+    display: inline-block;
+    width: 8px; height: 16px;
+    background: #c0c0c0;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+    margin-left: 2px;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="term-title">gistboard — orange723</span>
+  </div>
+  <div class="terminal-body">
+    <div class="header-line">$ gistboard --fetch orange723</div>
+    <div class="header-line">$ fetching from api.github.com...</div>
+    <div class="stats-line">$ found 16 gists (18 files) &mdash; last build: 2026-06-03 18:53 UTC</div>
+    <div class="stats-line">$ ─────────────────────────────────────────────</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/a1246e4af56bbb81920d5d15b93256e2" target="_blank" class="gist-link">init-system.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">(no description)</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 4mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/c669c8d5e0b0cba6201efd962eebca22" target="_blank" class="gist-link">install-ss.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">(no description)</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 4mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/9013550c46c0a893f070215d05140244" target="_blank" class="gist-link">install-caddy.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">ubuntu install caddy</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 4mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/d33d050b8a9625b6c8203d96c84f1053" target="_blank" class="gist-link">install-cloudflare-tunnel.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">Cloudflare Tunnel</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 4mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/2111e29ae3d42551a3ed6dbc043218b2" target="_blank" class="gist-link">install-docker-ubuntu.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">(no description)</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 4mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/a2c466ff6218ffd5ebcdc920f3a63c17" target="_blank" class="gist-link">init-kubeadm.yml</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">kubeadm</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#CB171E">[YAML]</span> 
+    <span class="gist-time">updated 5mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/4883f0e6e865b785ba44b5d223cbe6f4" target="_blank" class="gist-link">init-cri-docker.sh</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">cri-docker</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#89E051">[Shell]</span> 
+    <span class="gist-time">updated 5mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/6e6e1a9d3646c7996355ad3de1396b70" target="_blank" class="gist-link">init-flannel.yml</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">flannel</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#CB171E">[YAML]</span> 
+    <span class="gist-time">updated 5mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/9894df772660d33a6ef9e2b0d03acc44" target="_blank" class="gist-link">nginx-deployment.yml</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">nginx</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#CB171E">[YAML]</span> 
+    <span class="gist-time">updated 5mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/8ccd1e31b6db367d8d239948967a6778" target="_blank" class="gist-link">README.md</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">Recovery Mac app damage</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#083FA1">[Markdown]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/cda8889af8770c3f106a15d99f720afb" target="_blank" class="gist-link">README.md</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">dig</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#083FA1">[Markdown]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/5ae3a0370b8dfbf4498b4cb6e8aaebef" target="_blank" class="gist-link">README.md</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">ssh-agent</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#083FA1">[Markdown]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/328c351f2134c04b5abd2fef7556b569" target="_blank" class="gist-link">README.md</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">DevOps</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#083FA1">[Markdown]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/b021ce0c07e94b4dddaf9515c8551b62" target="_blank" class="gist-link">compose.yml</a>
+  <span class="gist-meta">(2 files)</span>
+  <span class="gist-desc">mysql</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#CB171E">[YAML]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/18a24dd4a7354a789e6e0fbe9617013d" target="_blank" class="gist-link">compose.yml</a>
+  <span class="gist-meta">(2 files)</span>
+  <span class="gist-desc">redis</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#CB171E">[YAML]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+<div class="gist-row">
+  <span class="prompt">$</span>
+  <a href="https://gist.github.com/orange723/91b39676071eec9d5b2cf8f2707b499e" target="_blank" class="gist-link">whitelist.txt</a>
+  <span class="gist-meta">(1 file)</span>
+  <span class="gist-desc">Adguard VPN whitelist</span>
+  <span class="gist-info">
+    <span class="lang-tag" style="color:#AAAAAA">[Text]</span> 
+    <span class="gist-time">updated 10mo ago</span>
+  </span>
+</div>
+    <div class="footer-line">
+      <span class="prompt">$</span> built by <a href="https://github.com/orange723/gistboard" style="color:#61AFEF;text-decoration:none;">gistboard</a> &middot; 2026-06-03 18:53 UTC<span class="cursor"></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
